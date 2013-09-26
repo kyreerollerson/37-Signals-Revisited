@@ -63,7 +63,24 @@ hr{
 nav{
 	color: #9e9e9e;
 	font-size: 10pt;
-	margin-top: 25px;
+	margin-top: 35px;
+}
+
+nav:first-child{
+	margin-left: 60px;
+}
+
+nav a:link:first-child{
+	color: #49bbea;
+	margin-right: 60px;
+}
+
+nav a:visited:first-child{
+	color: #49bbea;;
+}
+
+nav a:hover:first-child{
+	color: #3d68b5;
 }
 
 nav a:link{
@@ -74,16 +91,12 @@ nav a:link{
 	margin-left: 20px;
 }
 
+nav a:visited{
+	color: #3d68b5;
+}
+
 nav a:hover{
 	color: #49bbea;
-}
-
-nav a:link:first-child{
-	color: #49bbea;
-}
-
-nav a:hover:first-child{
-	color: #3d68b5;
 }
 
 #mini-container{
@@ -131,6 +144,7 @@ nav a:hover:first-child{
 }
 
 .column-img{
+	position: relative;
 	height: 88px;
 	margin-top: 20px;
 	width: 105px;
@@ -144,22 +158,26 @@ nav a:hover:first-child{
 }
 
 #arrow-1{
-	right: 745px;
+
 }
 
 #arrow-2{
-	right: 525px;
 }
 
 .arrow-left{
+	z-index: 100;
+	top: -130px;
+	left: 100px;
+	display: inline-block;
 	position: absolute;
-	top: 300px;
 }
 
 .arrow-right{
+	z-index: 100;
+	top: -130px;
+	left: -45px;
+	display: inline-block;
 	position: absolute;
-	right: 472px;
-	top: 300px;
 }
 
 .title a{
